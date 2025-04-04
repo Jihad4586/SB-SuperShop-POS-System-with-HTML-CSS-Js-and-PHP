@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashier</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>SB-SuperShop</h2>
+    <ul>
+      <li><a href="Homepage.html">Dashboard</a></li>
+      <li><a href="Inventory.html">Inventory</a></li>
+      <li><a href="cashier.html">Cashier</a></li>
+      <li><a href="user.php">Users</a></li>
+      <li><a href="LogPage.php">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+  <div class="cashier">
+      <header>
+        <h2>Cashier</h2>
+      </header>
+      <section class="order-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Item Info</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="order-items">
+            <!-- Items dynamically rendered by JavaScript -->
+          </tbody>
+        </table>
+      </section>
+      <section class="summary">
+        <p>Items Total: $<span id="items-total">0.00</span></p>
+        <p>Discount 5%: $<span id="discount">0.00</span></p>
+        <p>Total: $<span id="final-total">0.00</span></p>
+        <button id="payment-button">Proceed to Payment</button>
+      </section>
+  </div>
+  </div>
+
+  <script src="cashier.js"></script>
+</body>
+</html>

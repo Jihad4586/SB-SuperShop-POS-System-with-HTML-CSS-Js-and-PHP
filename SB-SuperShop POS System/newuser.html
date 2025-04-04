@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New User</title>
+  <link rel="stylesheet" href="newuser.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>SB-SuperShop</h2>
+    <ul>
+      <li><a href="Homepage.html">Dashboard</a></li>
+      <li><a href="Inventory.html">Inventory</a></li>
+      <li><a href="cashier.html">Cashier</a></li>
+      <li><a href="user.php">Users</a></li>
+      <li><a href="LogPage.php">Logout</a></li>
+    </ul>
+  </div>
+
+
+  <div class="main">
+    <div class="form-container">
+      <h2>New User</h2>
+      <form id="register-form" action="newreg.php" method="POST" enctype="multipart/form-data">
+        <div class="image-upload">
+          <label for="profile-picture">
+            <img src="img.jpg">
+          </label>
+          <input type="file" id="profile-picture" name="profile_picture" accept="image/*">
+        </div>
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="last_name" placeholder="Last Name" required>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <select name="gender" required>
+          <option value="" disabled selected>Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="number" name="age" placeholder="Age" min="1" required>
+        <div class="type">
+          <label><input type="radio" name="type" value="Manager" required> Manager</label>
+          <label><input type="radio" name="type" value="Cashier"> Cashier</label>
+          <label><input type="radio" name="type" value="Admin"> Admin</label>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

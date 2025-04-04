@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SB-SuperShop Dashboard</title>
+  <link rel="stylesheet" href="homepage.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>SB-SuperShop</h2>
+    <ul>
+      <li><a href="Homepage.html">Dashboard</a></li>
+      <li><a href="Inventory.html">Inventory</a></li>
+      <li><a href="cashier.html">Cashier</a></li>
+      <li><a href="user.php">Users</a></li>
+      <li><a href="LogPage.php">Logout</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="header">
+      <input type="text" placeholder="Search product, supplier, order" />
+    </div>
+    <div class="content">
+      <div class="overview">
+        <div class="card">
+          <h3>Sales Overview</h3>
+          <p>Sales: 832</p>
+          <p>Revenue: ৳18,300</p>
+        </div>
+        <div class="card">
+          <h3>Inventory Summary</h3>
+          <p>Quantity in Hand: 888</p>
+          <p>To be Received: 200</p>
+        </div>
+      </div>
+      <div class="charts">
+        <canvas id="salesChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="homepage.js"></script>
+</body>
+</html>

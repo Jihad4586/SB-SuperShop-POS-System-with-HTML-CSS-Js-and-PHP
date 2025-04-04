@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory - SB-SuperShop</title>
+  <link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>SB-SuperShop</h2>
+   <ul>
+      <li><a href="Homepage.html">Dashboard</a></li>
+      <li><a href="Inventory.html">Inventory</a></li>
+      <li><a href="cashier.html">Cashier</a></li>
+      <li><a href="user.php">Users</a></li>
+      <li><a href="LogPage.php">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <header>
+      <input type="text" placeholder="Search product">
+    </header>
+
+    <section class="inventory-summary">
+      <div class="box categories"> <p>Categories</p><h3>14</h3> </div>
+      <div class="box total-products"> <p>Total Products</p><h3>868</h3> </div>
+      <div class="box top-selling"> <p>Top Selling</p><h3>5</h3> </div>
+      <div class="box low-stock"> <p>Low Stocks</p><h3>12</h3> </div>
+    </section>
+
+    <section class="product-list">
+      <table>
+        <thead>
+          <tr>
+            <th>Products</th>
+            <th>Buying Price</th>
+            <th>Quantity</th>
+            <th>Threshold Value</th>
+            <th>Expiry Date</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Maggi</td><td>৳430</td><td>43 Packets</td><td>12 Packets</td><td>11/12/22</td><td class="in-stock">In-stock</td></tr>
+          <tr><td>Nescafe</td><td>৳380</td><td>40 Packets</td><td>25 Packets</td><td>10/12/22</td><td class="in-stock">In-stock</td></tr>
+          <tr><td>Horlicks</td><td>৳420</td><td>30 Packets</td><td>12 Packets</td><td>15/12/22</td><td class="out-stock">Out of stock</td></tr>
+          <tr><td>Pepsi</td><td>৳120</td><td>50 Bottles</td><td>30 Bottles</td><td>9/12/22</td><td class="in-stock">In-stock</td></tr>
+          <tr><td>Coca Cola</td><td>৳130</td><td>45 Bottles</td><td>28 Bottles</td><td>7/12/22</td><td class="in-stock">In-stock</td></tr>
+          <tr><td>Sprite</td><td>৳125</td><td>33 Bottles</td><td>10 Bottles</td><td>6/12/22</td><td class="out-stock">Out of stock</td></tr>
+          <tr><td>Dettol</td><td>৳300</td><td>60 Bottles</td><td>20 Bottles</td><td>4/12/22</td><td class="in-stock">In-stock</td></tr>
+          <tr><td>Lifebuoy</td><td>৳250</td><td>55 Bottles</td><td>15 Bottles</td><td>3/12/22</td><td class="out-stock">Out of stock</td></tr>
+          <tr><td>Sunlight</td><td>৳90</td><td>70 Bars</td><td>45 Bars</td><td>12/12/22</td><td class="in-stock">In-stock</td></tr>
+          <tr><td>Lux</td><td>৳95</td><td>80 Bars</td><td>55 Bars</td><td>11/12/22</td><td class="in-stock">In-stock</td></tr>
+          <tr><td>Close Up</td><td>৳60</td><td>90 Tubes</td><td>70 Tubes</td><td>1/12/22</td><td class="in-stock">In-stock</td></tr>
+          <tr><td>Bru</td><td>৳257</td><td>22 Packets</td><td>12 Packets</td><td>2/12/22</td><td class="out-stock">Out of stock</td></tr>
+          <tr><td>Red Bull</td><td>৳405</td><td>36 Packets</td><td>9 Packets</td><td>5/12/22</td><td class="in-stock">In-stock</td></tr>
+          <tr><td>Bourn Vita</td><td>৳502</td><td>14 Packets</td><td>6 Packets</td><td>8/12/22</td><td class="out-stock">Out of stock</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
